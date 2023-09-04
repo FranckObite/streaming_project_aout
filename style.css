@@ -353,8 +353,8 @@ header section .cards .card .poster{
     position: relative;
 
 }
-header section .cards .card{
-    width: 300px;
+header section .cards .card:hover{
+    min-width: 300px;
     overflow: hidden;
     
 }
@@ -366,7 +366,7 @@ header section .cards .card .rest_card{
     left: 0;
     top: 0;
     z-index: 999999;
-    opacity: 1;
+    opacity: 0;
     transition: 1s linear;
 
     
@@ -399,5 +399,65 @@ header section .cards .card .rest_card .cont {
    left: 0;
    color: #fff;
    padding: 0px 20px;
-   
 }
+header section .cards .card .rest_card .cont .sub {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+header section .cards .card .rest_card .cont .sub p{
+    font-size: 120px;
+    font-weight: 400;
+    color: rgb(255, 255, 255, .7);
+}
+header section .cards .card .rest_card .cont .sub h3{
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+header section .cards .card .rest_card .cont .sub h3 span{
+    background: yellow;
+    color: #000;
+    padding: 0px 3px;
+    margin: 0px 5px 0px 10px;
+    font-weight: 500;
+    border-radius: 2px;
+}
+header section .cards .card .rest_card .cont .sub h3 i{
+   margin-right: 3px;
+}
+header section .cards .card:hover .rest_card{
+    opacity: 1;
+}
+
+header section .bi-chevron-left{
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    width: 25px;
+    height: 25px;
+    background: rgb(255, 255, 255, .3);
+    color:  #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s linear;
+    z-index: 999999999;
+}
+header section .bi-chevron-rigth{
+    left: unset;
+    right: 3%;
+}
+header section:hover .bi-chevron-rigth{
+    opacity: 1;
+}
+header section:hover .bi-chevron-left{
+    opacity: 1;
+}
+
+
