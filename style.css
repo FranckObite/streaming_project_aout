@@ -328,6 +328,7 @@ header section .cards{
    display:  flex;
    align-items: center;
    overflow-x: auto;
+   scroll-behavior: smooth;
     
 }
 header section .cards::-webkit-scrollbar{
@@ -449,6 +450,25 @@ header section .bi-chevron-left{
     transition: .3s linear;
     z-index: 999999999;
 }
+
+header section .bi-chevron-right{
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    width: 25px;
+    height: 25px;
+    background: rgb(255, 255, 255, .3);
+    color:  #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s linear;
+    z-index: 999999999;
+}
+
 header section .bi-chevron-rigth{
     left: unset;
     right: 3%;
